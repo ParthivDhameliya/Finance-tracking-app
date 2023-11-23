@@ -41,10 +41,10 @@ INSTALLED_APPS = [
     "corsheaders",
     "rest_framework",
     "authentication",
+    "accounts",
+    "transactions",
     "savingGoals",
     "creditManagement", 
-    "expenseTracking",
-    "incomeTracking",
     "notifications",
 ]
 
@@ -149,3 +149,5 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+AUTH_USER_MODEL = 'authentication.UserAccount'
